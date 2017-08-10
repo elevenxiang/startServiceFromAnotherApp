@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.htc.eleven.clientapp.MainActivity">
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStartRemoteService"
+        android:text="启动远程服务"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStopRemoteService"
+        android:text="停止远程服务"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartRemoteService"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBindRemoteService"
+        android:text="绑定远程服务"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopRemoteService"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUnbindRemoteService"
+        android:text="松绑远程服务"
+        app:layout_constraintTop_toBottomOf="@+id/btnBindRemoteService"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        app:layout_constraintTop_toBottomOf="@+id/btnUnbindRemoteService"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSendData"
+        android:text="发送数据"
+        app:layout_constraintTop_toBottomOf="@+id/et"
+        tools:layout_editor_absoluteX="8dp" />
+</android.support.constraint.ConstraintLayout>
